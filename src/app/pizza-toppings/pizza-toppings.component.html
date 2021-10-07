@@ -1,10 +1,15 @@
 <h2>
     Available Toppings
 </h2>
-<div>
+<div
+    *ngFor="let pt of pizzaToppings"
+>
     <label>
-        <input type="checkbox" />
-        Pepperoni (1.75)
+        <input 
+            type="checkbox" 
+            [(ngModel)]="pt.checked"
+        />
+        {{ pt.name }} ({{ pt.price }})
     </label>
 </div>
 <br>
