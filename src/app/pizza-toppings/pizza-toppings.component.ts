@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { PizzaService } from '../pizza.service';
+
+interface pizzaToppingDisplay {
+  name: string;
+
+}
+
 
 @Component({
   selector: 'app-pizza-toppings',
@@ -7,9 +14,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PizzaToppingsComponent implements OnInit {
 
-  constructor() { }
+  // Magic ctor DI (dependency injection)
+  constructor(
+    private pizzaSvc: PizzaService
+  ) { }
 
   ngOnInit(): void {
+    const pt = this.pizzaSvc.getPizzaToppingsFromWebService();
+    console.log(pt);
+
+    this.pizzaToppings = pt.map(
+      x => ({
+        ...x
+        , checked: false
+      })
+    );
   }
 
 }
