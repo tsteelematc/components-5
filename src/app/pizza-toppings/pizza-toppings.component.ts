@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { PizzaService } from '../pizza.service';
 
+interface pizzaToppingDisplay{
+  name: string;
+  price: number;
+  checked: boolean;
+}
+
 @Component({
   selector: 'app-pizza-toppings',
   templateUrl: './pizza-toppings.component.html',
@@ -14,9 +20,17 @@ export class PizzaToppingsComponent implements OnInit {
     private pizzaSvc: PizzaService
   ) { }
 
+    pizzaToppings: pizzaToppingDisplay[] = []
+
   ngOnInit(): void {
     const pt = this.pizzaSvc.getPizzaToppingFromWebService();
     console.log(pt);
+
+    this.pizzaToppings = pt.map(
+      x=>({
+        ...x, checked: false
+      })
+    );
   }
 
 }
