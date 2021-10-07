@@ -3,7 +3,8 @@ import { PizzaService } from '../pizza.service';
 
 interface pizzaToppingDisplay {
   name: string;
-
+  price: number;
+  checked: boolean;
 }
 
 
@@ -18,6 +19,8 @@ export class PizzaToppingsComponent implements OnInit {
   constructor(
     private pizzaSvc: PizzaService
   ) { }
+  
+  pizzaToppings: pizzaToppingDisplay[] = [];
 
   ngOnInit(): void {
     const pt = this.pizzaSvc.getPizzaToppingsFromWebService();
