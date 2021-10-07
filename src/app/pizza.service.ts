@@ -6,4 +6,24 @@ import { Injectable } from '@angular/core';
 export class PizzaService {
 
   constructor() { }
+
+  getPizzaToppingsFromWebService() {
+
+    const pizzaToppingFromWeb = [
+      {
+        name: 'Pepperoni'
+        , price: 1.75
+      }
+      , {
+        name: 'Olives'
+        , price: 2.25
+      }
+      , {
+        name: 'Extra Cheese'
+        , price: 0.75
+      }
+    ];
+
+    return pizzaToppingFromWeb;
+  }
 }
