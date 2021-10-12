@@ -16,4 +16,6 @@ export class AppComponent {
     ...this.pizzas
     , `Pizza ${this.pizzas.length + 1}`
   ];
+
+  pizzaToppingsChanged = (pts: any) => console.log(pts);
 }

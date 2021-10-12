@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { PizzaService } from '../pizza.service';
 
 interface PizzaToppingDisplay {
@@ -18,7 +18,7 @@ export class PizzaToppingsComponent implements OnInit {
   constructor(
     private pizzaSvc: PizzaService
   ) { }
-
+  
   pizzaToppings: PizzaToppingDisplay[] = [];
 
   ngOnInit(): void {
@@ -35,6 +35,14 @@ export class PizzaToppingsComponent implements OnInit {
 
   // TS "getter" property ! ! !
   get total() {
+    
+    this.pizzaToppingsChanged.emit({
+      pizza: this.pizzaName
+      , toppings: this.pizzaToppings.filter(
+        x => x.checked
+      )
+    });
+
     return this.pizzaToppings
       .filter(
         x => x.checked
@@ -62,4 +70,8 @@ export class PizzaToppingsComponent implements OnInit {
 
   @Input('pizza-name')
   pizzaName = "";
+
+  @Output('pizza-toppings-changed')
+  pizzaToppingsChanged = new EventEmitter<any>();
+
 }

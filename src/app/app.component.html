@@ -9,5 +9,6 @@
 <app-pizza-toppings 
   *ngFor="let p of pizzas"
   pizza-name="{{p}}"
+  (pizza-toppings-changed)="pizzaToppingsChanged($event)"
 >
 </app-pizza-toppings>
