@@ -1,6 +1,12 @@
 <h2>
     Available Toppings
 </h2>
+<button (click)="checkAll()">
+    Check All
+</button>
+<button (click)="clearAll()">
+    Clear All
+</button>
 <div *ngFor="let pt of pizzaToppings">
     <label>
         <input type="checkbox" [(ngModel)]="pt.checked" />
