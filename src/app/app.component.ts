@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Components App';
+
+  pizzas = [
+    "Pizza 1"
+  ];
+
+  addPizza = () => this.pizzas = [
+    ...this.pizzas
+    , `Pizza ${this.pizzas.length + 1}`
+  ];
 }

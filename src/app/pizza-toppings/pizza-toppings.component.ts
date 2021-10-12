@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { PizzaService } from '../pizza.service';
 
 interface PizzaToppingDisplay {
@@ -59,4 +59,7 @@ export class PizzaToppingsComponent implements OnInit {
       , checked: false
     })
   );  
+
+  @Input('pizza-name')
+  pizzaName = "";
 }

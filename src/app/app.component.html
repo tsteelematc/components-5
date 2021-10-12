@@ -1,4 +1,13 @@
 <h1>
   {{ title }}
 </h1>
-<app-pizza-toppings></app-pizza-toppings>
+<button
+  (click)="addPizza()"
+>
+  Add Another Pizza
+</button>
+<app-pizza-toppings 
+  *ngFor="let p of pizzas"
+  pizza-name="{{p}}"
+>
+</app-pizza-toppings>
