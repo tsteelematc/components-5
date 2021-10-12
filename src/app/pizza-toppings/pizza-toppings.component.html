@@ -1,6 +1,17 @@
 <h2>
     Available Toppings
 </h2>
+
+<button type="button" name="button"
+    (click)="checkAll()">
+    CheckAll
+</button>
+<button type="button" name="button"
+    (click)="clearAll()">
+    clearAll
+</button>
+<br>
+<br>
 <div
     *ngFor="let pt of pizzaToppings"
 >
