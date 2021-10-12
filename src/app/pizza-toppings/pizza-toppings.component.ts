@@ -33,4 +33,20 @@ export class PizzaToppingsComponent implements OnInit {
     );
   }
 
+  // calculateTotal = () => {
+    // Statements go here with semi-colons...
+  // };
+
+  calculateTotal = () => this.total = this.pizzaToppings
+    .filter(
+      x => x.checked
+    )
+    .reduce(
+      (acc, x) => acc + x.price
+      , 0
+    )
+  ;
+
+  total = 0;
+
 }
