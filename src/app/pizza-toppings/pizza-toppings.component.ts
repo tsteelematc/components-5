@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { PizzaService } from '../pizza.service';
 
@@ -32,5 +33,19 @@ export class PizzaToppingsComponent implements OnInit {
       })
     );
   }
+
+
+  // TS "getter" property:
+  get total() {
+    return this.pizzaToppings
+      .filter(
+        x => x.checked
+      )
+      .reduce(
+        (acc, foo) => acc + foo.price
+        , 0
+      )
+      ;
+  };
 
 }
