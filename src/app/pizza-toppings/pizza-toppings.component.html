@@ -1,15 +1,10 @@
 <h2>
     Available Toppings
 </h2>
-<div
-    *ngFor="let pt of pizzaToppings"
->
+<div *ngFor="let pt of pizzaToppings">
     <label>
-        <input 
-            type="checkbox" 
-            [(ngModel)]="pt.checked"
-        />
-        {{ pt.name }} ({{ pt.price }})
+        <input type="checkbox" [(ngModel)]="pt.checked" />
+        {{ pt.name }} ({{ pt.price | currency }})
     </label>
 </div>
 <br>
