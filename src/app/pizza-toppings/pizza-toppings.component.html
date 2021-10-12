@@ -9,7 +9,7 @@
             type="checkbox" 
             [(ngModel)]="pt.checked"
         />
-        {{ pt.name }} ({{ pt.price }})
+        {{ pt.name }} ({{ pt.price | currency }})
     </label>
 </div>
 <br>
