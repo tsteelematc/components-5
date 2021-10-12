@@ -33,13 +33,15 @@ export class PizzaToppingsComponent implements OnInit {
     );
   }
 
-  calculateTotal = () => this.total = this.pizzaToppings
-    .filter(
-        x => x.checked
-    )
-    .reduce(
-        (acc, x) => acc + x.price
-        , 0
-    );
-  total = 0;
+    // TS "getter" property ! ! !
+  get total() {
+      return this.pizzaToppings
+      .filter(
+          x => x.checked
+      )
+      .reduce(
+          (acc, foo) => acc + foo.price
+          , 0
+      );
+  };
 }
