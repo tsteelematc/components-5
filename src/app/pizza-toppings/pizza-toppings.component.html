@@ -13,9 +13,11 @@
     </label>
 </div>
 <br>
-<button>
+<button
+    (click)="calculateTotal()"
+>
     Calculate Total
 </button>
 <h3>
-    $0.00
+    {{ total | currency}}
 </h3>
