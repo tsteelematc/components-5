@@ -12,17 +12,9 @@ export class WisconsinSalesTaxComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // TS "getter" property ! ! !
-  // get total() {
-  //   return this.pizzaToppings
-  //     .filter(
-  //       x => x.checked
-  //     )
-  //     .reduce(
-  //       (acc, foo) => acc + foo.price
-  //       , 0
-  //     )
-  //   ;
-  // };
+  // Calculate Wisconsin sales tax
+  get wisconsinSalesTax() {
+    return 100;
+  };
 
 }

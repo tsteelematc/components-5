@@ -5,7 +5,11 @@
     <mat-card-content>
         <mat-form-field appearance="fill">
             <mat-label>Input</mat-label>
-            <input matInput>
+            <input 
+                matInput
+                type="number"
+                placeholder="Ex. 20.00"
+            >
         </mat-form-field>
         &nbsp;
         X
@@ -15,41 +19,7 @@
         =
         &nbsp;
         <span>
-            <!-- {{ total | currency }} -->
+            {{ wisconsinSalesTax | currency }}
         </span>
     </mat-card-content>
 </mat-card>
-
-
-
-<!--
-<button 
-mat-mini-fab
-(click)="checkAll()"
->
-All
-</button>
-&nbsp;
-<button 
-mat-mini-fab
-color="secondary"
-(click)="clearAll()"
->
-None
-</button>
-<br>
-<br>
-<div *ngFor="let pt of pizzaToppings">
-<label>
-    <mat-checkbox
-        [(ngModel)]="pt.checked"
-    >
-    </mat-checkbox>
-    {{ pt.name }} ({{ pt.price | currency }})
-</label>
-</div>
-<br>
-<h3>
-{{ total | currency }}
-</h3>
--->
