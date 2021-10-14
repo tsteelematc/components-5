@@ -8,11 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { BrissSlackNTellComponent } from './briss-slack-n-tell/briss-slack-n-tell.component';
+import { MatChipsModule } from '@angular/material/chips';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    BrissSlackNTellComponent
   ],
   imports: [
     BrowserModule
@@ -21,6 +25,7 @@ import { MatButtonModule } from '@angular/material/button';
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
