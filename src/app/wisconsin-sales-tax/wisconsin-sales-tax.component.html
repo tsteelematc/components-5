@@ -1,25 +1,29 @@
 <mat-card>
     <mat-card-title>
-        Calculate Wisoncin Sales Tax
+        Mike's Calculate Wisconsin Sales Tax Component
     </mat-card-title>
     <mat-card-content>
         <mat-form-field appearance="fill">
             <mat-label>Input</mat-label>
             <input 
                 matInput
-                type="number"
+                required
                 placeholder="Ex. 20.00"
+                [(ngModel)]="subtotal"
             >
         </mat-form-field>
         &nbsp;
         X
         &nbsp;
-        5%
+        {{ wisconsinSalesTaxRate | percent }}
         &nbsp;
-        =
+        <button
+            mat-mini-fab
+            (click)="calculateTax"
+        >
+            =
+        </button>
         &nbsp;
-        <span>
-            {{ wisconsinSalesTax | currency }}
-        </span>
+        {{ wisconsinSalesTax | currency }}
     </mat-card-content>
 </mat-card>

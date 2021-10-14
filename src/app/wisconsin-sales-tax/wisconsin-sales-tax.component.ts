@@ -12,9 +12,11 @@ export class WisconsinSalesTaxComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // Calculate Wisconsin sales tax
-  get wisconsinSalesTax() {
-    return 100;
-  };
+  subtotal = 0;
+  wisconsinSalesTaxRate = 0.05;
+  wisconsinSalesTax = 0;
 
+  get calculateTax() {
+    return this.wisconsinSalesTax = this.subtotal * this.wisconsinSalesTaxRate;
+  };
 }
