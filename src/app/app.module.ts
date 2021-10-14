@@ -8,11 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    WisconsinSalesTaxComponent
   ],
   imports: [
     BrowserModule
@@ -21,6 +25,8 @@ import { MatButtonModule } from '@angular/material/button';
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
