@@ -1,15 +1,26 @@
-<h2>
-    Available Toppings
-</h2>
-<button
+<mat-card>
+    <mat-card-title>
+        Available Toppings
+    </mat-card-title>
+<mat-card-content>
+
+
+    <button
+    mat-mini-fab
+
     (click)="checkAll()"
 >
-    Check All
+    All
 </button>
+&NonBreakingSpace;
+
+
 <button
+    mat-mini-fab
+    color="secondary"
     (click)="clearAll()"
 >
-    Clear All
+    None
 </button>
 <br>
 <br>
@@ -17,10 +28,13 @@
     *ngFor="let pt of pizzaToppings"
 >
     <label>
-        <input 
+           
+        <mat-checkbox
+        [(ngModel)]="pt.checked"></mat-checkbox>
+        <!-- <input 
             type="checkbox" 
             [(ngModel)]="pt.checked"
-        />
+        /> -->
         {{ pt.name }} ({{ pt.price | currency }})
     </label>
 </div>
@@ -28,3 +42,10 @@
 <h3>
     {{ total | currency }}
 </h3>
+
+</mat-card-content>
+
+
+</mat-card>
+
+
