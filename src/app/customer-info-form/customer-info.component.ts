@@ -22,5 +22,14 @@ export class CustomerServiceComponent implements OnInit {
   constructor(
     private customerSvc: CustomerService
   ) { }
+
+  customerInformation: DisplayCustomerInfo[] = [];
+
+  ngOnInit(): void {
+
+    const customer = this.customerSvc.getCustomerInfoFromWebService();
+    console.log(customer);
+
+  }
     
 }
