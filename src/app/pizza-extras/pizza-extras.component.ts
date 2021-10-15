@@ -5,6 +5,7 @@ interface ExtrasDisplay {
     name: string;
     price: number;
     imagePath: string;
+    checked: boolean;
   }
   
 @Component({

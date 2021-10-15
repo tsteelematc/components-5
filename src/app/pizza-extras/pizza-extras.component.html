@@ -1,5 +1,5 @@
 <h2>Extras</h2>
-<div *ngFor="let ext of extras">
+<div *ngFor="let ext of extras" class="grid">
     <mat-card class="example-card">
         <mat-card-title-group>
             <mat-card-title>{{ ext.name }}</mat-card-title>
@@ -7,7 +7,11 @@
             <img mat-card-md-image src="{{ ext.imagePath }}">
         </mat-card-title-group>
         <mat-card-content>
-            Lorem ipsum dolor sit amet.
+            <label>
+                <mat-checkbox [(ngModel)]="ext.checked">
+                </mat-checkbox>
+                Add to order
+            </label>
         </mat-card-content>
     </mat-card>
     <br>
