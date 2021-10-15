@@ -33,10 +33,12 @@ export class PizzaToppingsComponent implements OnInit {
     );
   };
 
-  console.log(this.availablePizzaToppings);
+ //console.log(this.availablePizzaToppings);
+
+ // TS Getter property
 
   get totalPrice(){
-    return this.availablePizzaToppings
+    return this.pizzaToppings
       .filter(
         x => x.checked
       )
@@ -45,7 +47,21 @@ export class PizzaToppingsComponent implements OnInit {
         , 0
       )
       ;
-  }
+  };
+
+  checkAll = ()  => this.pizzaToppings = this.pizzaToppings.map(
+    x => ({
+      ...x 
+      , checked: true
+    })
+  );
+
+  clearAll = () => this.pizzaToppings = this.pizzaToppings.map(
+    x => ({
+      ...x
+      , checked: false
+    })
+  );
 
   // calculateTotal = () => {
   //   this.totalPrice = this.availablePizzaToppings
