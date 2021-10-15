@@ -30,6 +30,27 @@ export class CustomerServiceComponent implements OnInit {
     const customer = this.customerSvc.getCustomerInfoFromWebService();
     console.log(customer);
 
+    this.customerInformation = customer.map(
+      x => ({
+        ...x
+      })
+    );
+
   }
+
+  // const storeCustomerInfo = [];
+
+  // displayCustomerInformation = () => this.customerInformation = this.customerInformation.push(
+  //   x => ({
+  //     x.firstName,
+  //     x.lastName,
+  //     x.streetAddress,
+  //     x.city,
+  //     x.state,
+  //     x.zipCode,
+  //     x.phoneNumber
+      
+  //   })
+  // )
     
 }
