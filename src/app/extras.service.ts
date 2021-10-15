@@ -7,28 +7,28 @@ export class ExtrasService {
 
   constructor() { }
 
-  getExtrassFromWebService() {
+  getExtrasFromWebService() {
 
     const extrasFromWeb = [
       {
         name: 'Coke'
         , price: 1.75
-        , imageFile: 'coke.jpg'
+        , imagePath: '../../assets/images/coke.jpg'
       }
       , {
         name: 'Sprite'
         , price: 1.75
-        , imageFile: 'sprite.jpg'
+        , imagePath: '../../assets/images/sprite.jpg'
       }      
       , {
         name: 'Diet Coke'
         , price: 1.75
-        , imageFile: 'diet.jpg'
+        , imagePath: '../../assets/images/diet.jpg'
       }      
       , {
         name: 'Fanta Orange'
         , price: 1.75
-        , imageFile: 'fanta.jpg'
+        , imagePath: '../../assets/images/fanta.jpg'
       }
     ];
 
