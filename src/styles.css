@@ -10,3 +10,13 @@ body {
   max-width: 900px;
   background-color: aliceblue;
 }
+
+.grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-item {
+  flex: 0 0 20%;
+  margin: 5px;
+}
