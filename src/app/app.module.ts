@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { AlAdditionComponent } from './al-addition/al-addition.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AlAdditionComponent } from './al-addition/al-addition.component';
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
