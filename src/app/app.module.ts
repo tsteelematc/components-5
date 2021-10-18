@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
