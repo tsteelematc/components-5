@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PizzaService } from '../pizza.service';
 
 @Component({
   selector: 'app-tip-amount',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TipAmountComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public pizzaSvc: PizzaService
+
+  ) { }
 
   ngOnInit(): void {
   }
 
+  tipPercent = 20;
+
+  get tipAmount() {
+    return this.pizzaSvc.total * (this.tipPercent / 100.0); 
+  }
 }
