@@ -10,15 +10,21 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { AlAdditionComponent } from './al-addition/al-addition.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     AlAdditionComponent,
-    TjsMultiplicationComponent
+    TjsMultiplicationComponent,
+    TjsAdditionComponent,
+    TjsMultiplicationComponent,
+    WisconsinSalesTaxComponent
   ],
   imports: [
     BrowserModule
@@ -29,6 +35,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatButtonModule
     , MatDialogModule
     , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
