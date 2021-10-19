@@ -12,6 +12,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { TipAmountComponent } from './tip-amount/tip-amount.component';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatButtonModule
     , MatSliderModule
     , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
