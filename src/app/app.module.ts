@@ -13,13 +13,21 @@ import { TipAmountComponent } from './tip-amount/tip-amount.component';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { AlAdditionComponent } from './al-addition/al-addition.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
-    AppComponent
-    , PizzaToppingsComponent
-    , TipAmountComponent
-    , TjsMultiplicationComponent
+    AppComponent,
+    PizzaToppingsComponent,
+    AlAdditionComponent,
+    TjsMultiplicationComponent,
+    TjsAdditionComponent,
+    TjsMultiplicationComponent,
+    WisconsinSalesTaxComponent,
+    TipAmountComponent
   ],
   imports: [
     BrowserModule
@@ -29,6 +37,7 @@ import { MatInputModule } from '@angular/material/input';
     , MatCheckboxModule
     , MatButtonModule
     , MatSliderModule
+    , MatDialogModule
     , MatFormFieldModule
     , MatInputModule
   ],
