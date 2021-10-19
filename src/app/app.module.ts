@@ -9,12 +9,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { LizziComponentComponent } from './lizzi-component/lizzi-component.component';
+import { MatSelectModule } from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    LizziComponentComponent
+    LizziComponentComponent,
+
   ],
   imports: [
     BrowserModule
@@ -23,6 +26,7 @@ import { LizziComponentComponent } from './lizzi-component/lizzi-component.compo
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
