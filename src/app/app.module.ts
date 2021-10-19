@@ -12,13 +12,15 @@ import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sale
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
-    AppComponent
-    , PizzaToppingsComponent
-    , TjsMultiplicationComponent
-    , WisconsinSalesTaxComponent
+    AppComponent,
+    PizzaToppingsComponent,
+    TjsAdditionComponent,
+    TjsMultiplicationComponent,
+    WisconsinSalesTaxComponent
   ],
   imports: [
     BrowserModule
