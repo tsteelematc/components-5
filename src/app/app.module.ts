@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { JdhAdditionComponent } from './jdh-addition/jdh-addition.component';
 
 @NgModule({
@@ -23,6 +25,8 @@ import { JdhAdditionComponent } from './jdh-addition/jdh-addition.component';
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
