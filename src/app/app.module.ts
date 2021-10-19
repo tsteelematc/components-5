@@ -10,12 +10,15 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { AlAdditionComponent } from './al-addition/al-addition.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    AlAdditionComponent
+    AlAdditionComponent,
+    TjsMultiplicationComponent
   ],
   imports: [
     BrowserModule
@@ -25,6 +28,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     , MatCheckboxModule
     , MatButtonModule
     , MatDialogModule
+    , MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
