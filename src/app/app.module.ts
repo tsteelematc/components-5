@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatCheckboxModule
     , MatButtonModule
     , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
