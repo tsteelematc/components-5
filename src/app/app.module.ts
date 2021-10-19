@@ -15,10 +15,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
     declarations: [
-        AppComponent
-        , PizzaToppingsComponent
-        , PizzaExtrasComponent
-        , TjsMultiplicationComponent
+        AppComponent,
+        PizzaToppingsComponent,
+        PizzaExtrasComponent,
+        TjsMultiplicationComponent
     ],
     imports: [
         BrowserModule
