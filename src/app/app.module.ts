@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { LizziComponentComponent } from './lizzi-component/lizzi-component.component';
 import { MatSelectModule } from '@angular/material/select';
 
@@ -16,6 +18,7 @@ import { MatSelectModule } from '@angular/material/select';
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    TjsMultiplicationComponent
     LizziComponentComponent,
 
   ],
@@ -26,6 +29,7 @@ import { MatSelectModule } from '@angular/material/select';
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatFormFieldModule
     , MatSelectModule
   ],
   providers: [],
