@@ -16,7 +16,7 @@ export class PizzaToppingsComponent implements OnInit {
 
   // Magic ctor DI (dependency injection)
   constructor(
-    private pizzaSvc: PizzaService
+    public pizzaSvc: PizzaService
   ) { }
 
   pizzaToppings: PizzaToppingDisplay[] = [];
@@ -35,7 +35,7 @@ export class PizzaToppingsComponent implements OnInit {
 
   // TS "getter" property ! ! !
   get total() {
-    return this.pizzaToppings
+    return this.pizzaSvc.total = this.pizzaToppings
       .filter(
         x => x.checked
       )

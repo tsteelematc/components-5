@@ -27,4 +27,6 @@ export class PizzaService {
 
     return ptFromWeb;
   }
+
+  total = 0;
 }
