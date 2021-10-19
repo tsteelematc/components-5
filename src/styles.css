@@ -14,9 +14,10 @@ body {
 .grid {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .grid-item {
-  flex: 0 0 20%;
+  flex: 0 0 48%;
   margin: 5px;
 }

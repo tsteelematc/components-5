@@ -9,11 +9,12 @@
                 <img mat-card-md-image src="{{ ext.imagePath }}">
             </mat-card-title-group>
             <mat-card-content>
-                <label>
-                    <mat-checkbox [(ngModel)]="ext.checked">
-                    </mat-checkbox>
-                    Add to order
-                </label>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Qty</mat-label>
+                    <input matInput #qty type="number" maxlength="5" placeholder="Quantity" value="0">
+
+                </mat-form-field>&nbsp;&nbsp;
+                <button mat-raised-button color="accent">Add to Order</button>
             </mat-card-content>
         </mat-card>
     </div>

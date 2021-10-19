@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 import { PizzaExtrasComponent } from './pizza-extras/pizza-extras.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { PizzaExtrasComponent } from './pizza-extras/pizza-extras.component';
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
