@@ -8,17 +8,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
-import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
-import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     TjsAdditionComponent,
-    TjsMultiplicationComponent
+    TjsMultiplicationComponent,
+    WisconsinSalesTaxComponent
   ],
   imports: [
     BrowserModule
