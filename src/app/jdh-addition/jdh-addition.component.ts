@@ -20,5 +20,8 @@ export class JdhAdditionComponent implements OnInit {
   total = 0;
 
 add = () => this.total = this.numberOne + this.numberTwo;
+subtract = () => this.total = this.numberOne - this.numberTwo;
+devide = () => this.total = this.numberOne / this.numberTwo;
+multiply = () => this.total = this.numberOne * this.numberTwo;
 
 }

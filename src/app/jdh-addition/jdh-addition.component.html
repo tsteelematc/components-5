@@ -1,6 +1,6 @@
-<mat-card>
+<mat-card style="background-color: beige;">
     <mat-card-title>
-        Jeff's Card
+        Jeffery's Quick Calculator
     </mat-card-title>
     <mat-card-content>
         <mat-form-field>
@@ -13,7 +13,40 @@
                 [(ngModel)]="numberOne"
             />
         </mat-form-field>
-            &nbsp; + &nbsp;
+            &nbsp;
+            <button
+            mat-mini-fab
+            style="background-color: rgb(248, 164, 69);"
+            (click)=add();
+            >
+            + 
+            </button>
+
+            <button
+            mat-mini-fab
+            style="background-color: rgb(156, 53, 204);"
+            (click)=subtract();
+            >
+            - 
+            </button>
+
+            <button
+            mat-mini-fab
+            style="background-color: rgb(255, 78, 65);"
+            (click)=devide();
+            >
+            / 
+            </button>
+
+            <button
+            mat-mini-fab
+            style="background-color: rgb(96, 245, 59);"
+            (click)=multiply();
+            >
+            X 
+            </button>
+             
+             &nbsp;
         <mat-form-field>
             <mat-label>
                 Number 2
@@ -25,12 +58,7 @@
             />
         </mat-form-field>
         &nbsp;
-        <button
-        mat-mini-fab
-        (click)=add();
-        >
-            = 
-        </button>
+            =       
         &nbsp;
         {{total}}
     </mat-card-content>
