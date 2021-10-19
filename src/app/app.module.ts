@@ -8,13 +8,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    TjsAdditionComponent,
     TjsMultiplicationComponent
   ],
   imports: [
@@ -25,6 +28,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatCheckboxModule
     , MatButtonModule
     , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
