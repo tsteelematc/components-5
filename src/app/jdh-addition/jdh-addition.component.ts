@@ -1,3 +1,4 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +12,13 @@ export class JdhAdditionComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  numberOne = 0;
+
+  numberTwo = 0;
+
+  total = 0;
+
+add = () => this.total = this.numberOne + this.numberTwo;
 
 }
