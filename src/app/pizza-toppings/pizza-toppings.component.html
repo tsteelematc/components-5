@@ -1,36 +1,36 @@
-
 <mat-card>
-    <mat-card-title>Available Toppings</mat-card-title>
-        <mat-card-content>
-
-
-            <button mat-raised-button color="warn" (click)="checkAll()">
-                Check All
-            </button>
-            <button mat-raised-button color="warn" (click)="clearAll()">
-                Clear All
-            </button>
-            <br>
-        <br>
-        <div
-            *ngFor="let pt of pizzaToppings"
+    <mat-card-title>
+        Available Toppings
+    </mat-card-title>
+    <mat-card-content>
+        <button 
+            mat-mini-fab
+            (click)="checkAll()"
         >
-        <label>
-            <mat-checkbox [(ngModel)]="pt.checked"></mat-checkbox>
-            {{ pt.name }} ({{ pt.price | currency }})
-        </label>
+            All
+        </button>
+        &nbsp;
+        <button 
+            mat-mini-fab
+            color="secondary"
+            (click)="clearAll()"
+        >
+            None
+        </button>
+        <br>
+        <br>
+        <div *ngFor="let pt of pizzaToppings">
+            <label>
+                <mat-checkbox
+                    [(ngModel)]="pt.checked"
+                >
+                </mat-checkbox>
+                {{ pt.name }} ({{ pt.price | currency }})
+            </label>
         </div>
-        <h2>{{ total | currency }}</h2>
-
-
-
-
+        <br>
+        <h3>
+            {{ total | currency }}
+        </h3>
     </mat-card-content>
-
-
-
 </mat-card>
-
-
-
-

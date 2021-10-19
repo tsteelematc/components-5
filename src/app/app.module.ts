@@ -10,21 +10,25 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSliderModule } from '@angular/material/slider';
 import { TipAmountComponent } from './tip-amount/tip-amount.component';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PizzaToppingsComponent,
-    TipAmountComponent
+    AppComponent
+    , PizzaToppingsComponent
+    , TipAmountComponent
+    , TjsMultiplicationComponent
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatCheckboxModule,
-    MatButtonModule,
-    MatSliderModule
+    BrowserModule
+    , FormsModule
+    , BrowserAnimationsModule
+    , MatCardModule
+    , MatCheckboxModule
+    , MatButtonModule
+    , MatSliderModule
+    , MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
