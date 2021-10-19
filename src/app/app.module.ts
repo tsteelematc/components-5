@@ -11,12 +11,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrissSlackNTellComponent } from './briss-slack-n-tell/briss-slack-n-tell.component';
 import { MatChipsModule } from '@angular/material/chips';
 
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    BrissSlackNTellComponent
+    BrissSlackNTellComponent,
+    TjsMultiplicationComponent
   ],
   imports: [
     BrowserModule
@@ -26,6 +29,7 @@ import { MatChipsModule } from '@angular/material/chips';
     , MatCheckboxModule
     , MatButtonModule
     , MatChipsModule
+    , MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
