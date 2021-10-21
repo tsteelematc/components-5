@@ -10,12 +10,32 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import { CustomerServiceComponent } from './customer-info-form/customer-info.component';
+import { BrissSlackNTellComponent } from './briss-slack-n-tell/briss-slack-n-tell.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { PizzaExtrasComponent } from './pizza-extras/pizza-extras.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { TipAmountComponent } from './tip-amount/tip-amount.component';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { AlAdditionComponent } from './al-addition/al-addition.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    CustomerServiceComponent
+    CustomerServiceComponent,
+    BrissSlackNTellComponent,
+    TjsMultiplicationComponent,
+    AlAdditionComponent,
+    TjsMultiplicationComponent,
+    TjsAdditionComponent,
+    TjsMultiplicationComponent,
+    WisconsinSalesTaxComponent,
+    TipAmountComponent,
+    PizzaExtrasComponent
   ],
   imports: [
     BrowserModule
@@ -26,6 +46,11 @@ import { CustomerServiceComponent } from './customer-info-form/customer-info.com
     , MatButtonModule
     , MatInputModule
     , MatSelectModule
+    , MatChipsModule
+    , MatSliderModule
+    , MatDialogModule
+    , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
