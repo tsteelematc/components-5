@@ -8,11 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { PizzaExtrasComponent } from './pizza-extras/pizza-extras.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { TipAmountComponent } from './tip-amount/tip-amount.component';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 import { AlAdditionComponent } from './al-addition/al-addition.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
@@ -27,7 +28,8 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     TjsAdditionComponent,
     TjsMultiplicationComponent,
     WisconsinSalesTaxComponent,
-    TipAmountComponent
+    TipAmountComponent,
+    PizzaExtrasComponent
   ],
   imports: [
     BrowserModule
