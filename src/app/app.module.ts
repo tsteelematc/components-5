@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import { BrissSlackNTellComponent } from './briss-slack-n-tell/briss-slack-n-tell.component';
+import { MatChipsModule } from '@angular/material/chips';
 import { MatInputModule } from '@angular/material/input';
 import { PizzaExtrasComponent } from './pizza-extras/pizza-extras.component';
 import { MatSliderModule } from '@angular/material/slider';
@@ -23,6 +25,8 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    BrissSlackNTellComponent,
+    TjsMultiplicationComponent,
     AlAdditionComponent,
     TjsMultiplicationComponent,
     TjsAdditionComponent,
@@ -38,6 +42,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatChipsModule
     , MatSliderModule
     , MatDialogModule
     , MatFormFieldModule
