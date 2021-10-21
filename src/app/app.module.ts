@@ -8,6 +8,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { LizziComponentComponent } from './lizzi-component/lizzi-component.component';
+import { MatSelectModule } from '@angular/material/select';
 import { JdhAdditionComponent } from './jdh-addition/jdh-addition.component';
 import { BrissSlackNTellComponent } from './briss-slack-n-tell/briss-slack-n-tell.component';
 import { MatChipsModule } from '@angular/material/chips';
@@ -25,6 +27,8 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    TjsMultiplicationComponent,
+    LizziComponentComponent,
     JdhAdditionComponent,
     BrissSlackNTellComponent,
     TjsMultiplicationComponent,
@@ -47,6 +51,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     , MatSliderModule
     , MatDialogModule
     , MatFormFieldModule
+    , MatSelectModule
     , MatInputModule
   ],
   providers: [],
