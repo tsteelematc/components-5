@@ -10,16 +10,30 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { BrissSlackNTellComponent } from './briss-slack-n-tell/briss-slack-n-tell.component';
 import { MatChipsModule } from '@angular/material/chips';
-
+import { MatInputModule } from '@angular/material/input';
+import { PizzaExtrasComponent } from './pizza-extras/pizza-extras.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { TipAmountComponent } from './tip-amount/tip-amount.component';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { AlAdditionComponent } from './al-addition/al-addition.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     BrissSlackNTellComponent,
-    TjsMultiplicationComponent
+    TjsMultiplicationComponent,
+    AlAdditionComponent,
+    TjsMultiplicationComponent,
+    TjsAdditionComponent,
+    TjsMultiplicationComponent,
+    WisconsinSalesTaxComponent,
+    TipAmountComponent,
+    PizzaExtrasComponent
   ],
   imports: [
     BrowserModule
@@ -29,7 +43,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatCheckboxModule
     , MatButtonModule
     , MatChipsModule
+    , MatSliderModule
+    , MatDialogModule
     , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
