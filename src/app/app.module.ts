@@ -7,15 +7,34 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { JdhAdditionComponent } from './jdh-addition/jdh-addition.component';
+import { BrissSlackNTellComponent } from './briss-slack-n-tell/briss-slack-n-tell.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatInputModule } from '@angular/material/input';
+import { PizzaExtrasComponent } from './pizza-extras/pizza-extras.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { TipAmountComponent } from './tip-amount/tip-amount.component';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { AlAdditionComponent } from './al-addition/al-addition.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     JdhAdditionComponent,
+    BrissSlackNTellComponent,
+    TjsMultiplicationComponent,
+    AlAdditionComponent,
+    TjsMultiplicationComponent,
+    TjsAdditionComponent,
+    TjsMultiplicationComponent,
+    WisconsinSalesTaxComponent,
+    TipAmountComponent,
+    PizzaExtrasComponent
   ],
   imports: [
     BrowserModule
@@ -24,6 +43,9 @@ import { JdhAdditionComponent } from './jdh-addition/jdh-addition.component';
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatChipsModule
+    , MatSliderModule
+    , MatDialogModule
     , MatFormFieldModule
     , MatInputModule
   ],
