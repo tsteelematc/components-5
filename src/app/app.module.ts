@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {MatInputModule} from '@angular/material/input';
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 import { FormsModule } from '@angular/forms';
@@ -23,6 +23,7 @@ import { CustomerServiceComponent } from './customer-info-form/customer-info.com
     , MatCardModule
     , MatCheckboxModule
     , MatButtonModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
