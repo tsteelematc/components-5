@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TdjRollDiceComponent implements OnInit {
 
+  //Dependency Injection
   constructor() { }
 
   ngOnInit(): void {
+    //Declaration of Constants and Variables
+
+    //Generate Number Value
+
+    //Display Value to User
+    console.log("Troy's Files");
   }
 
 }
