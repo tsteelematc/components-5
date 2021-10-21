@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
 import { CustomerServiceComponent } from './customer-info-form/customer-info.component';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { CustomerServiceComponent } from './customer-info-form/customer-info.com
     , MatCheckboxModule
     , MatButtonModule
     , MatInputModule
+    , MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
