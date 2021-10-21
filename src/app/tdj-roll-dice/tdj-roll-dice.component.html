@@ -1,1 +1,22 @@
-<p>tdj-roll-dice works!</p>
+<mat-card>
+    <mat-card-title>Troy's Dice Roller</mat-card-title>
+
+    <mat-card-content>
+        <p>because your to lazy to do it yourself...</p>
+
+        <!-- This button doesn't do anything...-->
+        <button (click)="areYouJoking()" mat-mini-fab color="">D1</button>
+        &nbsp;
+        <button id="4" (click)="rollDiceFour()" mat-mini-fab color="primary">D4</button>
+        &nbsp;
+        <button id="6" (click)="rollDiceSix()" mat-mini-fab color="primary">D6</button>
+        &nbsp;
+        <button id="8" (click)="rollDiceEight()" mat-mini-fab color="primary">D8</button>
+        &nbsp;
+        <button id="10" (click)="rollDiceTen()" mat-mini-fab color="primary">D10</button>
+        &nbsp;
+        <button id="12" (click)="rollDiceTwelve()" mat-mini-fab color="primary">D12</button>
+        &nbsp;
+        <button id="20" (click)="rollDiceTwenty()" mat-fab>D20</button>
+    </mat-card-content>
+</mat-card>

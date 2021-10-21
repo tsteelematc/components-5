@@ -11,12 +11,60 @@ export class TdjRollDiceComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    //Declaration of Constants and Variables
-
-    //Generate Number Value
-
-    //Display Value to User
-    console.log("Troy's Files");
   }
+
+  //Finds a Number within given values
+  getNumber = (max:number) => {
+    const number = Math.trunc(Math.random()*max) + 1;
+    return number;
+  };
+
+  rollDiceFour = () => {
+    let max = 4; //Dice Value
+    let rn = (this.getNumber(max));
+    //Display Dice value to User
+    console.log(`D4 ${rn}`);
+  };
+
+  rollDiceSix = () => {
+    let max = 6; //Dice Value
+    let rn = (this.getNumber(max));
+    //Display Dice value to User
+    console.log(`D6 ${rn}`);
+  };
+
+  rollDiceEight = () => {
+    let max = 8; //Dice Value
+    let rn = (this.getNumber(max));
+    //Display Dice value to User
+    console.log(`D8 ${rn}`);
+  };
+
+  rollDiceTen = () => {
+    let max = 10; //Dice Value
+    let rn = (this.getNumber(max));
+    //Display Dice value to User
+    console.log(`D10 ${rn}`);
+  };
+
+  rollDiceTwelve = () => {
+    let max = 12; //Dice Value
+    let rn = (this.getNumber(max));
+    //Display Dice value to User
+    console.log(`D12 ${rn}`);
+  };
+
+  rollDiceTwenty = () => {
+    let max = 20; //Dice Value
+    let rn = (this.getNumber(max));
+    //Display Dice value to User
+    console.log(`D20 ${rn}`);
+  };
+
+
+  areYouJoking = () => {
+    console.log("are you joking?");
+    
+  };
 
 }
