@@ -19,52 +19,53 @@ export class TdjRollDiceComponent implements OnInit {
     return number;
   };
 
+  //Displays Rolled Value in an alert box
+  displayRM = (rn:number,dt:number) => {alert(`A D${dt} was rolled.... You got a ${rn}!`)};
+
   rollDiceFour = () => {
     let max = 4; //Dice Value
     let rn = (this.getNumber(max));
-    //Display Dice value to User
-    console.log(`D4 ${rn}`);
+    this.displayRM(rn,max);
   };
 
   rollDiceSix = () => {
     let max = 6; //Dice Value
     let rn = (this.getNumber(max));
-    //Display Dice value to User
-    console.log(`D6 ${rn}`);
+    this.displayRM(rn,max);
   };
 
   rollDiceEight = () => {
     let max = 8; //Dice Value
     let rn = (this.getNumber(max));
-    //Display Dice value to User
-    console.log(`D8 ${rn}`);
+    this.displayRM(rn,max);
   };
 
   rollDiceTen = () => {
     let max = 10; //Dice Value
     let rn = (this.getNumber(max));
-    //Display Dice value to User
-    console.log(`D10 ${rn}`);
+    this.displayRM(rn,max);
   };
 
   rollDiceTwelve = () => {
     let max = 12; //Dice Value
     let rn = (this.getNumber(max));
-    //Display Dice value to User
-    console.log(`D12 ${rn}`);
+    this.displayRM(rn,max);
   };
 
   rollDiceTwenty = () => {
     let max = 20; //Dice Value
     let rn = (this.getNumber(max));
-    //Display Dice value to User
-    console.log(`D20 ${rn}`);
+    this.displayRM(rn,max);
   };
 
 
-  areYouJoking = () => {
-    console.log("are you joking?");
-    
+  areYouJoking = () => { //You shouldn't be looking at this...
+    alert("DUDE! Why would you think a D1 even exists. *crying*");
+    //Send user away!
+    Object.assign(document.createElement('a'), {
+      target: '_blank',
+      href: "https://www.youtube.com/watch?v=iik25wqIuFo&ab_channel=Rickroll%2Cbutwithadifferentlink"
+    }).click();
   };
 
 }
