@@ -1,7 +1,9 @@
 <mat-card>
+
     <mat-card-title>
         Customer Information
     </mat-card-title>
+    <br />
     <mat-card-content>
 
         <form class="example-form">
@@ -81,42 +83,27 @@
                   <mat-option value="Wyoming">WY</mat-option>
                 </mat-select>
               </mat-form-field>
+
+              &nbsp;
+            <mat-form-field appearance="fill">
+                <mat-label>Zip Code</mat-label>
+                <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
+                <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+            </mat-form-field>
+
+            <br />
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Phone Number</mat-label>
+                <span matPrefix>+1 &nbsp;</span>
+                <input type="tel" matInput placeholder="555-555-1234">
+              </mat-form-field>
+
+
         </form>
 
         
 
-        <hr />
-
-        <form action="post">
-
-            <label for="firstName">First Name:<span class="required"></span></label>
-            <input type="text" name="firstName" id="firstName" placeholder="Sandy" required />
-            <br>
-    
-            <label for="lastName">Last Name:<span class="required"></span></label>
-            <input type="text" name="lastName" id="lastName" placeholder="Cheeks" required />
-            <br>
-    
-            <label for="streetAddress">Street Address:<span class="required"></span></label>
-            <input type="text" name="streetAddress" id="streetAddress" placeholder="123 Cherry St." required />
-            <br>
-    
-            <label for="city">City:<span class="required"></span></label>
-            <input type="text" name="city" id="city" placeholder="Cincinnati" required />
-            <br>
-    
-            <label for="state">State:<span class="required"></span></label>
-            <input type="text" name="state" id="state" placeholder="Ohio" required />
-            <br>
-    
-            <label for="zipCode">Zip Code:<span class="required"></span></label>
-            <input type="text" name="zipCode" id="zipCode" placeholder="45201" required />
-            <br>
-    
-            <label for="phone">Phone:</label>
-            <input type="text" name="phone" id="phone" placeholder="(800)867-5309">
-        </form>
-
+        
         &nbsp;
         <br />
     
