@@ -9,12 +9,20 @@
         <form class="example-form">
             <mat-form-field appearance="fill">
                 <mat-label>First Name</mat-label>
-                <input matInput>
+                <input 
+                    matInput
+                    [(ngModel)]="customer.firstName"
+                    name="fName"
+                >
             </mat-form-field>
             &nbsp;
             <mat-form-field appearance="fill">
                 <mat-label>Last Name</mat-label>
-                <input matInput>
+                <input 
+                    matInput
+                    [(ngModel)]="customer.lastName"
+                    name="lName"
+                    >
             </mat-form-field>
             <br />
             <mat-form-field appearance="fill">
@@ -113,6 +121,8 @@
         > 
             Add Customer 
         </button>
+
+        {{ customer.firstName }} {{ customer.lastName }}
 
     </mat-card-content>
 </mat-card>
