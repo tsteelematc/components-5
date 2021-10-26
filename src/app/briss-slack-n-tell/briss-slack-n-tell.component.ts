@@ -11,5 +11,10 @@ export class BrissSlackNTellComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  classes = [
+      "PHP"
+      , "JSF"
+      , "AGILE"
+      , "JOB SEARCH"
+  ]
 }

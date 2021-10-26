@@ -5,10 +5,13 @@
     <br>
     <mat-card-content>
         <mat-chip-list>
-            <mat-chip color="red">PHP</mat-chip>
-            <mat-chip>JSF</mat-chip>
-            <mat-chip>Agile</mat-chip>
-            <mat-chip>Job Search</mat-chip>
+
+            <mat-chip
+            *ngFor="let class of classes"
+            >
+            {{ class }}    
+
+            </mat-chip>
         </mat-chip-list>
     </mat-card-content>
 </mat-card>
