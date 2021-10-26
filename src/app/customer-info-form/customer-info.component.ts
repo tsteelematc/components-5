@@ -37,20 +37,11 @@ export class CustomerServiceComponent implements OnInit {
     );
 
   }
-
-  // const storeCustomerInfo = [];
-
-  // displayCustomerInformation = () => this.customerInformation = this.customerInformation.push(
-  //   x => ({
-  //     x.firstName,
-  //     x.lastName,
-  //     x.streetAddress,
-  //     x.city,
-  //     x.state,
-  //     x.zipCode,
-  //     x.phoneNumber
-      
-  //   })
-  // )
     
+  customer = {
+    firstName: ""
+    , lastName: ""
+  };
+
+
 }
