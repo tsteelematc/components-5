@@ -52,5 +52,9 @@ export class CustomerServiceComponent implements OnInit {
       
   //   })
   // )
-    
+  
+  customer = {
+    firstName: ""
+    , lastName: ""
+  };
 }
