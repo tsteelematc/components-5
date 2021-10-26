@@ -49,8 +49,12 @@ export class CustomerServiceComponent implements OnInit {
   //     x.state,
   //     x.zipCode,
   //     x.phoneNumber
-      
+
   //   })
   // )
-    
+
+    firstName = "Lizzi";
+    lastName = "Luebke"; 
+
+
 }
