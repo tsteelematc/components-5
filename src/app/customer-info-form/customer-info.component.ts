@@ -19,38 +19,42 @@ interface DisplayCustomerInfo {
 export class CustomerServiceComponent implements OnInit {
 
     // Magic ctor DI (dependency injection)
-  constructor(
-    private customerSvc: CustomerService
-  ) { }
+    constructor(
+        private customerSvc: CustomerService
+    ) { }
 
-  customerInformation: DisplayCustomerInfo[] = [];
+    customerInformation: DisplayCustomerInfo[] = [];
 
-  ngOnInit(): void {
+    ngOnInit(): void {
 
-    const customer = this.customerSvc.getCustomerInfoFromWebService();
-    console.log(customer);
+        const customer = this.customerSvc.getCustomerInfoFromWebService();
+        console.log(customer);
 
-    this.customerInformation = customer.map(
-      x => ({
-        ...x
-      })
-    );
+        this.customerInformation = customer.map(
+            x => ({
+                ...x
+            })
+        );
 
-  }
+    }
 
-  // const storeCustomerInfo = [];
+    // const storeCustomerInfo = [];
 
-  // displayCustomerInformation = () => this.customerInformation = this.customerInformation.push(
-  //   x => ({
-  //     x.firstName,
-  //     x.lastName,
-  //     x.streetAddress,
-  //     x.city,
-  //     x.state,
-  //     x.zipCode,
-  //     x.phoneNumber
-      
-  //   })
-  // )
-    
+    // displayCustomerInformation = () => this.customerInformation = this.customerInformation.push(
+    //   x => ({
+    //     x.firstName,
+    //     x.lastName,
+    //     x.streetAddress,
+    //     x.city,
+    //     x.state,
+    //     x.zipCode,
+    //     x.phoneNumber
+
+    //   })
+    // )
+    customer = {
+        firstName: ""
+        , lastName: ""
+    };
+
 }
