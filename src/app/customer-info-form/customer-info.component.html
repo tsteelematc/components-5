@@ -11,7 +11,7 @@
                 <mat-label>First Name</mat-label>
                 <input 
                     matInput
-                    [(ngModel)]="firstName"
+                    [(ngModel)]="customer.firstName"
                     name="fname"
                 >
             </mat-form-field>
@@ -121,7 +121,7 @@
         <br />
         <br />
         <!-- interpolated binding to display information to the page -->
-        {{firstName}}
+        {{customer.firstName}}
 
     </mat-card-content>
 </mat-card>
